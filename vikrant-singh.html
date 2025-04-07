@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>10Th Man Fixer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3507461396230058');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3507461396230058&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+</head>
+
+<body>
+
+    <!-- partial:index.partial.html -->
+    <main class="main-content">
+        <section class="slideshow">
+
+            <div class="slideshow-inner">
+
+                <div class="slides">
+
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+
+                            <div class="caption">
+                                <div class="title">🔥10Th Man🔥</div>
+                                <br />
+                                <br />
+                                <br />
+                                <div class="title">CRICKET PREDICTION BADSHAH 🏏🔥</div>
+                                <a onclick="openTelegram()" style="cursor:pointer" class="btn" id="slideshow">
+                <i class="fa fa-telegram" style="font-size:200px"></i>
+              </a>
+
+                                <br />
+                                <br />
+                                <br />
+                                <a onclick="openTelegram()" style="cursor:pointer" class="btn" id="slideshow">
+                <span class="btn-inner">Join The Original Telegram Channel</span>
+                <i class="fa fa-telegram" style="font-size:48px"></i>
+                </a>
+                                <br /> <br />
+                                <br />`
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <div class="text">
+                                    <span class="timer">FREE JOINING ENDS IN...</span>
+                                    <span class="seconds">60</span>
+                                </div>
+
+                                <a onclick="openTelegram()" class="btn-show" style="cursor:pointer" id="slideshow">
+                <span class="btn-inner">Join The Original Telegram Channel</span>
+              </a>
+                                <br />
+                            </div>
+
+                        </div>
+
+                        <div class="image-container">
+                            <img src="img/logo.jpg" alt="" class="image" />
+                        </div>
+
+                    </div>
+
+
+
+
+
+        </section>
+    </main>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+        function isMobileView() {
+            return window.matchMedia('(max-width: 767px)').matches;
+        }
+
+        // Apply margin if it's a mobile view
+        function applyMarginForMobileView() {
+            if (isMobileView()) {
+                var element = document.getElementById('slides');
+                if (element) {
+                    element.style.marginTop = '200px'; // Add your desired margin value here
+                }
+            }
+        }
+        var slideshowInner = document.getElementById('slideshow');
+
+        slideshowInner.addEventListener('click', function() {
+            window.location.href = 'https://t.me/+CT5H4V9lNlc3OWQ1';
+        });
+
+        function openTelegram() {
+            window.location.href = 'https://t.me/+CT5H4V9lNlc3OWQ1';
+        }
+        // Call the function when the window is resized
+        window.addEventListener('resize', applyMarginForMobileView);
+
+        // Call the function initially when the page loads
+        applyMarginForMobileView();
+
+        function startCountdown() {
+            var slides = document.querySelectorAll('.slide');
+
+            slides.forEach(function(slide) {
+                var secondsElement = slide.querySelector('.seconds');
+                var seconds = 60;
+
+                var countdownInterval = setInterval(function() {
+                    seconds--;
+                    secondsElement.textContent = seconds;
+
+                    if (seconds === 0) {
+                        clearInterval(countdownInterval);
+                        // Handle countdown completion here
+                    }
+                }, 1000);
+            });
+        }
+
+        startCountdown();
+
+        function toggleButtonVisibility() {
+            var btnMobile = document.getElementById('btnMobile');
+            var btnDesktop = document.getElementById('btnDesktop');
+
+            if (window.innerWidth <= 767) {
+                btnMobile.style.display = 'inline-block';
+                btnDesktop.style.display = 'none';
+            } else {
+                btnMobile.style.display = 'none';
+                btnDesktop.style.display = 'inline-block';
+            }
+        }
+
+        // Call the function when the window is resized
+        window.addEventListener('resize', toggleButtonVisibility);
+
+        // Call the function initially when the page finishes loading
+        window.addEventListener('load', toggleButtonVisibility);
+    </script>
+</body>
+
+</html>
